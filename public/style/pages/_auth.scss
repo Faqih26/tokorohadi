@@ -1,0 +1,23 @@
+.page-auth {
+    .row-login {
+        min-height: 70vh;
+    }
+    .section-store-auth {
+        h2 {
+            font-size: 28px;
+            color: #8becbb;
+            font-weight: 200;
+            margin-top: 0;
+        }
+
+        .form-control {
+            background: #8becbb;
+            border-radius: 8px;
+        }
+
+        .btn-signup {
+            @include button-variant(#8becbb, transparent);
+            color: #bbbbbb;
+        }
+    }
+}
