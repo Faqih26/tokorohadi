@@ -10,7 +10,7 @@ use App\Transaction;
 use App\Models\TransactionDetail;
 
 use Exception;
-
+use GrahamCampbell\ResultType\Success;
 use Midtrans\Snap;
 use Midtrans\Config;
 use Midtrans\Notification;
@@ -180,5 +180,20 @@ class CheckoutController extends Controller
                 ]
             ]);
         }
+    }
+
+    public function finish(Request $request)
+    {
+        return view('pages.success');
+    }
+
+    public function unfinish(Request $request)
+    {
+        return view('pages.home');
+    }
+
+    public function error(Request $request)
+    {
+        return view('pages.home');
     }
 }
