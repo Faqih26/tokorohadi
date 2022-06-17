@@ -29,10 +29,10 @@ Route::post('/details/{id}', [App\Http\Controllers\DetailController::class, 'add
 
 
 
-Route::post('/checkout/callback', [App\Http\Controllers\CheckoutController::class, 'callback'])->name('midtrans-callback');
-Route::post('/checkout/finish', [App\Http\Controllers\CheckoutController::class, 'finish'])->name('midtrans-finish');
-Route::post('/checkout/unfinish', [App\Http\Controllers\CheckoutController::class, 'unfinish'])->name('midtrans-finish');
-Route::post('/checkout/error', [App\Http\Controllers\CheckoutController::class, 'error'])->name('error');
+//Route::post('/checkout/callback', [App\Http\Controllers\CheckoutController::class, 'callback'])->name('midtrans-callback');
+//Route::post('/checkout/finish', [App\Http\Controllers\CheckoutController::class, 'finish'])->name('midtrans-finish');
+//Route::post('/checkout/unfinish', [App\Http\Controllers\CheckoutController::class, 'unfinish'])->name('midtrans-finish');
+//Route::post('/checkout/error', [App\Http\Controllers\CheckoutController::class, 'error'])->name('error');
 
 
 Route::get('/success', [App\Http\Controllers\CartController::class, 'success'])->name('success');
