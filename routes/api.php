@@ -19,9 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/checkout/callback', [App\Http\Controllers\CheckoutController::class, 'callback'])->name('midtrans-callback');
-//Route::get('/checkout/finish', [App\Http\Controllers\CheckoutController::class, 'finish'])->name('midtrans-finish');
-//Route::get('/checkout/unfinish', [App\Http\Controllers\CheckoutController::class, 'unfinish'])->name('midtrans-unfinish');
-//Route::get('/checkout/error', [App\Http\Controllers\CheckoutController::class, 'error'])->name('error');
+
 
 Route::get('register/check', [App\Http\Controllers\Auth\RegisterController::class, 'check'])->name('api-register-check-success');
 Route::get('provinces', [App\Http\Controllers\API\LocationController::class, 'provinces'])->name('api-provinces');

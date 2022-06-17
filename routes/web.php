@@ -29,7 +29,6 @@ Route::post('/details/{id}', [App\Http\Controllers\DetailController::class, 'add
 
 
 
-//Route::post('/checkout/callback', [App\Http\Controllers\CheckoutController::class, 'callback'])->name('midtrans-callback');
 Route::get('/checkout/finish', [App\Http\Controllers\CheckoutController::class, 'finish'])->name('midtrans-finish');
 Route::get('/checkout/unfinish', [App\Http\Controllers\CheckoutController::class, 'unfinish'])->name('midtrans-unfinish');
 Route::get('/checkout/error', [App\Http\Controllers\CheckoutController::class, 'error'])->name('error');
