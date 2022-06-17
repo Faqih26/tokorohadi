@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\category;
+use App\Category;
 use App\ProductGallery;
 use App\Product;
 use App\Http\Controllers\Controller;
