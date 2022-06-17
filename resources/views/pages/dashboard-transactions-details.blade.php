@@ -104,13 +104,14 @@
                       <div class="col-12 col-md-6">
                         <div class="product-title">Province</div>
                         <div class="product-subtitle">
-                          {{ App\Models\Province::find($transaction->transaction->user->provinces_id)->name }}
+                          {{ App\Models\Province::find($transaction->transaction->user->provinces_id)->name ?? 'Data Tidak ada'}}
+
                         </div>
                       </div>
                       <div class="col-12 col-md-6">
                         <div class="product-title">City</div>
                         <div class="product-subtitle">
-                          {{ App\Models\Regency::find($transaction->transaction->user->regencies_id)->name }}
+                          {{ App\Models\Regency::find($transaction->transaction->user->regencies_id)->name ?? 'Data Tidak ada'}}
                         </div>
                       </div>
                       <div class="col-12 col-md-6">
