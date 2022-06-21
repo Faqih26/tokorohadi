@@ -191,11 +191,11 @@
               <div class="product-subtitle">Country Tax</div>
             </div>--}}
             <div class="col-4 col-md-3">
-              <div class="product-title">Rp. {{ number_format($inscurance_price =20000) }}</div>
+              <div class="product-title">Rp. {{ number_format($inscurance_price =10000) }}</div>
               <div class="product-subtitle">Product Insurance</div>
             </div>
             <div class="col-4 col-md-2">
-              <div class="product-title">Rp. {{ number_format($shipping_price =10000) }}</div>
+              <div class="product-title">Rp. {{ number_format($shipping_price =20000) }}</div>
               <div class="product-subtitle">Ship to Jakarta</div>
             </div>
             <div class="col-4 col-md-2">

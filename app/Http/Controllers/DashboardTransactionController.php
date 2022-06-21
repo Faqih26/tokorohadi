@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 
 class DashboardTransactionController extends Controller
 {
+
     public function index()
     {
         $sellTransactions = TransactionDetail::with(['transaction.user','product.galleries'])
