@@ -22,6 +22,8 @@ class TransactionDetail extends Model
 
     ];
 
+    //public $timestamps =false;
+
     public function product(){
         return $this->hasOne(Product::class,'id','products_id');
     }

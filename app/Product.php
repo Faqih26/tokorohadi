@@ -19,7 +19,7 @@ class Product extends Model
     protected $hidden =[
 
     ];
-
+    //public $timestamps =false;
     public function galleries()
     {
         return $this->hasMany(ProductGallery::class,'products_id','id');

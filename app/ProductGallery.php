@@ -15,6 +15,7 @@ class ProductGallery extends Model
 
     ];
 
+    //public $timestamps =false;
     public function product()
     {
         return $this->belongsTo(Product::class,'products_id','id');
