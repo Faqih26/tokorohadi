@@ -70,12 +70,22 @@ class DashboardProductController extends Controller
         $data['slug'] = Str::slug($request->name);
         $product = Product::create($data);
 
-        $gallery = [
+        if ($request->photo){
+            $gallery = [
             'products_id'=> $product->id,
             'photos'=> $request->file('photo')->store('assets/product','public'),
         ];
+            ProductGallery::create($gallery);}
+        else{
+            "harus menambahkan gambar";
+        };
 
-        ProductGallery::create($gallery);
+        //$gallery = [
+         //   'products_id'=> $product->id,
+         //   'photos'=> $request->file('photo')->store('assets/product','public'),
+        //];
+
+        //ProductGallery::create($gallery);
 
         return redirect()->route('dashboard-product');
     }
