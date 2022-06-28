@@ -75,7 +75,7 @@
                           {{ $transaction->product->name }}
                         </div>
                         <div class="col-md-3">
-                          Toko Sembako H Rohadi
+                          {{ $transaction->transaction->user->name ?? '' }}
                         </div>
                         <div class="col-md-3">
                           {{ $transaction->created_at }}
