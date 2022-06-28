@@ -69,7 +69,7 @@
             <div class="row">
               <div class="col-lg-8">
                 <h1>{{ $product->name }}</h1>
-                <div class="owner">By Toko Rohadi</div>
+                <div class="owner">By Toko Sembako H Rohadi</div>
                 <div class="price">Rp. {{ number_format($product->price) }}</div>
               </div>
               <div class="col-lg-2" data-aos="zoom-in">

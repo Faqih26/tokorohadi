@@ -11,7 +11,7 @@
           >
             <div class="container-fluid">
               <div class="dashboard-heading">
-                <h2 class="dashboard-title">Shirup Marzan</h2>
+                <h2 class="dashboard-title"></h2>
                 <p class="dashboard-subtitle">Product Details</p>
               </div>
               <div class="dashboard-content">

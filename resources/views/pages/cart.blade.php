@@ -60,7 +60,7 @@
                     </td>
                     <td style="width: 35%;">
                       <div class="product-title">{{ $cart->product->name }}</div>
-                      <div class="product-subtitle">by {{ $cart->product->user->store_name }}</div>
+                      <div class="product-subtitle">by Toko Sembako H Rohadi</div>
                     </td>
                     <td style="width: 35%;">
                       <div class="product-title">Rp. {{ number_format($cart->product->price) }}</div>
