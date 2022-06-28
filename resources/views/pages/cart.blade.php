@@ -52,7 +52,7 @@
                     <td style="width: 25%;">
                       @if ($cart->product->galleries)
                           <img
-                        src="{{ Storage::url($cart->product->galleries->first()->photos) }}"
+                        src="{{ Storage::url($cart->product->galleries->first()->photos ?? 'data tidak ada') }}"
                         alt=""
                         class="cart-image"
                       />
