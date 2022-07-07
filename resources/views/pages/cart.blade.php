@@ -105,7 +105,7 @@
                   id="address_one"
                   aria-describedby="emailHelp"
                   name="address_one"
-                  value=" "
+                  value="{{ $cart->user->address_one ?? ''}} "
                 />
               </div>
             </div>{{--
@@ -148,7 +148,7 @@
                   class="form-control"
                   id="zip_code"
                   name="zip_code"
-                  value=" "
+                  value="{{ $cart->user->zip_code ?? '' }} "
                 />
               </div>
             </div>
@@ -160,7 +160,7 @@
                   class="form-control"
                   id="country"
                   name="country"
-                  value="Indonesia"
+                  value="{{ $cart->user->country ?? ''}}"
                 />
               </div>
             </div>
@@ -172,7 +172,7 @@
                   class="form-control"
                   id="phone_number"
                   name="phone_number"
-                  value=""
+                  value="{{ $cart->user->phone_number ?? ''}}"
                 />
               </div>
             </div>
