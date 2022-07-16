@@ -142,9 +142,10 @@
                     <li class="nav-item">
                     <a class="nav-link" href="#"> Hi, Admin </a>
                     </li>
+                    {{--
                     <li class="nav-item">
                     <a class="nav-link d-inline-block" href="#"> Cart </a>
-                    </li>
+                    </li>--}}
                 </ul>
                 </div>
             </nav>
