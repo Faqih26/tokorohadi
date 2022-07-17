@@ -14,11 +14,13 @@ class DashboardTransactionController extends Controller
         $sellTransactions = TransactionDetail::with(['transaction.user','product.galleries'])
                             ->whereHas('product', function($product){
                                 $product->where('users_id', Auth::user()->id);
-                            })->get();
+                            })->latest()
+                            ->get();
         $buyTransactions = TransactionDetail::with(['transaction.user','product.galleries'])
                             ->whereHas('transaction', function($transaction){
                                 $transaction->where('users_id', Auth::user()->id);
-                            })->get();
+                            })->latest()
+                            ->get();
 
         return view('pages.dashboard-transactions',[
             'sellTransactions' => $sellTransactions,
@@ -51,11 +53,13 @@ class DashboardTransactionController extends Controller
         $sellTransactions = TransactionDetail::with(['transaction.user','product.galleries'])
                             ->whereHas('product', function($product){
                                 $product->where('users_id', Auth::user()->id);
-                            })->get();
+                            })->latest()
+                            ->get();
         $buyTransactions = TransactionDetail::with(['transaction.user','product.galleries'])
                             ->whereHas('transaction', function($transaction){
                                 $transaction->where('users_id', Auth::user()->id);
-                            })->get();
+                            })->latest()
+                            ->get();
 
         return view('pages.dashboard-transactions-admin',[
             'sellTransactions' => $sellTransactions,

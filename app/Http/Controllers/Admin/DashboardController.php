@@ -21,7 +21,7 @@ class DashboardController extends Controller
         $transactions = TransactionDetail::with(['transaction.user','product.galleries'])
                         ->whereHas('product',function($product){
                             $product->where('users_id',Auth::user()->id);
-                        });
+                        })->latest();
 
         return view('pages.admin.dashboard',[
             'customer' => $customer,
