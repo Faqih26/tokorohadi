@@ -133,10 +133,11 @@
                         <div class="product-title">Postal Code</div>
                         <div class="product-subtitle">{{ $transaction->transaction->user->zip_code }}</div>
                       </div>
+                      {{--
                       <div class="col-12 col-md-6">
                         <div class="product-title">Country</div>
                         <div class="product-subtitle">{{ $transaction->transaction->user->country }}</div>
-                      </div>
+                      </div> --}}
 
                       <div class="col-12 col-md-3">
                         <div class="product-title">Shipping Status</div>

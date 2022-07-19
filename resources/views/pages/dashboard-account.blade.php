@@ -106,7 +106,7 @@
                                   value="{{ $user->zip_code }}"
                                 />
                               </div>
-                            </div>
+                            </div>{{--
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label for="country">Country</label>
@@ -118,7 +118,7 @@
                                   value="{{ $user->country }}"
                                 />
                               </div>
-                            </div>
+                            </div>--}}
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label for="phone_number">Mobile</label>
