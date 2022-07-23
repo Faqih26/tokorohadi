@@ -34,6 +34,7 @@
               <div class="card-body">
                   <form action="{{ route('category.store') }}" method="post" enctype="multipart/form-data">
                 @csrf
+                <input type="hidden" name="users_id" value="{{ Auth::user()->id }}">
                 <div class="row">
                   <div class="col-md-12">
                     <div class="form-group">
